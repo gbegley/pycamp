@@ -16,7 +16,7 @@ gbr = gmaps.geocode(address)
 # crd = {lat: some_latitue, lng: some_longitude}
 crd = gbr[0]['geometry']['location']
 
-# find places within 5km of the address
+# find places within 10km of the address
 gbrnb = gmaps.places_nearby(crd, radius=10000)
 
 photos = []
