@@ -6,7 +6,7 @@ import os
 pp = pprint.PrettyPrinter(indent=2)
 
 
-api_key = 'AIzaSyCFv52MzJAFk2vefN2sGX9z_aoy9G9OV_0'
+api_key = ...
 
 address = '1357 Pinewood Rd, Jacksonville Beach, Fl'
 
