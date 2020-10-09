@@ -6,7 +6,7 @@ import os
 pp = pprint.PrettyPrinter(indent=2)
 
 
-api_key = '...'
+api_key = os.environ.get("GC_PYCAMP_KEY")
 
 address = '1357 Pinewood Rd, Jacksonville Beach, Fl'
 
