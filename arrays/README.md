@@ -12,7 +12,7 @@
    1. Print 'acat', and then print the sum and average and 'shape' of 'acat' 
 
 
-All printing below should attempt to label and format the values requested for printing. 
+All printing should attempt to label and format the values requested for printing. 
 
 For example
 
