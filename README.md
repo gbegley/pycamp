@@ -25,7 +25,26 @@ and
 
 `git commit -m "Some message" <file_or_directory>`
 
-for example, create a file named *hello.txt*, for example, by echo some text into a file
+
+
+
+#### Atom IDE
+IDE stands for "Integrated Development Environment", and you can download the AtomIDE from 
+https://atom.io/packages/atom-ide-ui. The Atom IDE has built in support for git and git hub.
+
+You can add "python language specific" support to the Atom IDE from 
+https://atom.io/packages/ide-python
+
+
+## Using a git repository
+
+### Clone the repository
+
+`git clone https://github.com/gbegley/pycamp.git`
+
+### Add a file to the repository
+
+Create a file named *hello.txt*, for example, by echo some text into a file
 
 `echo "Hello from the echo command." > hello.txt`
 
@@ -37,15 +56,10 @@ git will now be tracking the file *hello.txt*. Git is aware of the file, but you
 
 `git commit -m "some message" <file>`
 
-or
+The new file is now part of the repository.
 
-`git commit -m "Added Hello file to the repository" hello.txt`
+### You can push the change to the origin repository (The repository you clone at the start) using `git push`
+
+`git push`
 
 
-
-#### Atom IDE
-IDE stands for "Integrated Development Environment", and you can download the AtomIDE from 
-https://atom.io/packages/atom-ide-ui. The Atom IDE has built in support for git and git hub.
-
-You can add "python language specific" support to the Atom IDE from 
-https://atom.io/packages/ide-python
