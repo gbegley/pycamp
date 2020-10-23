@@ -15,6 +15,33 @@ This is a source control management client you will use to interact with source 
 Download from https://git-scm.com/download/ and make sure to inlcude the 'git_bash' option.
 
 You can get ("git") all of the code from **pycamp** repository using **git clone <repository_url>**, which in this case is
+`git clone https://github.com/gbegley/pycamp.git`
+
+Once you've cloned the repository, you can begin modifying, and committing code using
+
+`git add <file>` 
+
+and
+
+`git commit -m "Some message" <file_or_directory>`
+
+for example, create a file named *hello.txt*, for example, by echo some text into a file
+
+`echo "Hello from the echo command." > hello.txt`
+
+You will now have a file called hello.txt that can be added to the local repository using `git add <file>`, which in this case will be
+
+`git add hello.txt`
+
+git will now be tracking the file *hello.txt*. Git is aware of the file, but you need to **commit** the **add**ed file before it will truely be in the repository, using 
+
+`git commit -m "some message" <file>`
+
+or
+
+`git commit -m "Added Hello file to the repository" hello.txt`
+
+
 
 #### Atom IDE
 IDE stands for "Integrated Development Environment", and you can download the AtomIDE from 
