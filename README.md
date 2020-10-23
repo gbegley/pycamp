@@ -15,6 +15,7 @@ This is a source control management client you will use to interact with source 
 Download from https://git-scm.com/download/ and make sure to inlcude the 'git_bash' option.
 
 You can get ("git") all of the code from **pycamp** repository using **git clone <repository_url>**, which in this case is
+
 `git clone https://github.com/gbegley/pycamp.git`
 
 Once you've cloned the repository, you can begin modifying, and committing code using
