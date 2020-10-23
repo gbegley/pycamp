@@ -57,7 +57,7 @@ git will now be tracking the file *hello.txt*. Git is aware of the file, but you
 
 `git commit -m "some message" <file>`
 
-`git commit -m "Added hello"` hello.txt
+`git commit -m "Added hello" hello.txt`
 
 The new file is now part of the repository.
 
