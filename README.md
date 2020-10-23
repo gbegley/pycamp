@@ -58,7 +58,8 @@ git will now be tracking the file *hello.txt*. Git is aware of the file, but you
 
 The new file is now part of the repository.
 
-### You can push the change to the origin repository (The repository you clone at the start) using `git push`
+### Push the changes back to the server
+You can push the change to the origin repository (The repository you clone at the start) using `git push`
 
 `git push`
 
