@@ -26,7 +26,20 @@ and
 
 `git commit -m "Some message" <file_or_directory>`
 
+#### Running python from "git-bash"
+Add the following to your home directory ~/.bash_profile
+```
+function maybe_python37() {
+    if [ $# -eq 0 ]; then
+        winpty /c/code/soft/py/python37-32/python -i
+    else
+       /c/code/soft/py/python37-32/python $@
+    fi
+}
 
+alias python=maybe_python37
+```
+winpty is a program that causes other win32 applications to interact with the termal Input/Output.
 
 
 #### Atom IDE
