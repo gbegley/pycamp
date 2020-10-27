@@ -1,9 +1,8 @@
-a5 = list(range(5,15))
+A5 = list(range(15))
+print("A5={0} {1}  {2} {3}".format(A5,"hello", "from", "Leo"))
 
-a6 = list(range(900,1000))
+A1000 = list(range(1000))
+print("A1000={0} {1}  {2} {3}".format(A1000,"hello", "from", "Leo"))
 
-a7 = list(range(500,900))
-
-a18 = a5 + a6 + a7
-
-print(a18)
+A900 = list(range(900,1000))
+print("A900={0} {1}  {2} {3}".format(A900,"hello", "from", "Leo"))
