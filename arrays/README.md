@@ -16,6 +16,9 @@ All printing should attempt to label and format the values requested for printin
 
 For example
 
-    print( "Shape of Acat : %s".format(acat.shape) )
+    print("A5={0} {1}  {2} {3}".format(a5,"hello", "from", "Leo"))
+    # prints out this
+    # A5=[0, 1, 2, 3, 4] hello  from Leo
+
 
 How could you have created the 'a5' array using the "range()" function?
