@@ -31,10 +31,14 @@ A Pet Class might look like
 
 ```
 class Pet:
-	def __init__(self,type,breed,name)
-		self.type=type
+	def __init__(self,petType,breed,name,cost):
+		self.petType=petType
 		self.breed=breed
 		self.name=name
+		self.cost=cost
+		
+	def __repr__(self):
+		return "Pet<{}-{}#{}:{:3.2f}>".format(self.petType,self.breed,self.name,self.cost)
 ```
 
 and then create instances of the 'Pet' class like this.
@@ -49,18 +53,19 @@ and then create instances of the 'Pet' class like this.
 You can create a Petstore Object like this:
 
 ```
-class Petstore:
-	pets = {"cats":list(),"dogs":list(),"birds":list()}
+class PetStore:
+	pets = {"cats":list(),"dogs":list(),"birds":list(),"fishs":list()}
 
-	def getPets( self, type ):
-		k = pet.type + 's'
+	def getPets( self, t ):
+		k = "{}s".format(t)
 		return self.pets[ k ]
 	
-	def add( self, pet ):
+	def addPet( self, pet ):
 		try:
-  			self.getPets(pet.type).append(pet)
+  			l = self.getPets(pet.petType)
+  			l.append(pet)
 		except:
-  			print("We don't carry pets of type {}".format(k))
+  			print("We don't carry pets of type {}".format(pet.petType))
 ```
 
 You can find the first Item in a list with filtering and the 'next' function
