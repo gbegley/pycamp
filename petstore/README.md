@@ -102,4 +102,3 @@ e.g.
 myDog = ps.getPet('dog','Patty')
 print(myDog)
 ```
-
