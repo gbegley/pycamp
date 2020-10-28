@@ -73,7 +73,7 @@ first = next((x for x in l if x>6))
 
 so to find a particular pet in the petstore, you would need to get the list for the pet type, and then find the pet by name.
 ```
-ps = # the PetStore
+ps = PetStore()
 
 l = ps.getPets('dogs')
 myPet = next((p for p in l if p.name=='Patty'))
