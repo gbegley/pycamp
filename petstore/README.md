@@ -91,13 +91,15 @@ and return the Pet Object. The logic for doing this is already done for you
 in the code just above this comment. You only need to add a function to the 
 petstore that will perform this logic
 
-#	
-#	def getPet( self, petType, name ):
-#		# do the logic above
-#
+```	
+	def getPet( self, petType, name ):
+		# do the logic above
+```
 
 Test by calling your new function on the petstore, 
-e.g. 
+e.g.
+```
 myDog = ps.getPet('dog','Patty')
 print(myDog)
+```
 
