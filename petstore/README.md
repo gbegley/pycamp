@@ -62,3 +62,20 @@ class Petstore:
 		except:
   			print("We don't carry pets of type {}".format(k))
 ```
+
+You can find the first Item in a list with filtering and the 'next' function
+
+```
+l = list(range(10))
+matches = list(x for x in l if x>6)
+first = next((x for x in l if x>6))
+```
+
+so to find a particular pet in the petstore, you would need to get the list for the pet type, and then find the pet by name.
+```
+ps = # the PetStore
+
+l = ps.getPets('dogs')
+myPet = next((p for p in l if p.name=='Patty'))
+
+```
