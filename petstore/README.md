@@ -44,10 +44,10 @@ class Pet:
 and then create instances of the 'Pet' class like this.
 
 ```
-	patty = Pet('dog','dalmation','Patty')
-	cole = Pet('dog','pug','Cole')
-	brandon = Pet('cat','demon','Boo')
-	tweety = Pet('bird',"Canary','Tweety')
+	patty = Pet('dog','dalmation','Patty',20)
+	cole = Pet('dog','pug','Cole',18)
+	brandon = Pet('cat','demon','Boo',4)
+	tweety = Pet('bird',"Canary','Tweety',8)
 ```
 
 You can create a Petstore Object like this:
