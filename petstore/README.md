@@ -84,3 +84,20 @@ l = ps.getPets('dogs')
 myPet = next((p for p in l if p.name=='Patty'))
 
 ```
+
+Your assignment is to add a function to the pet store that will 
+take the pet type (e.g. 'dog', 'cat', 'fish', etc) and the pet name
+and return the Pet Object. The logic for doing this is already done for you
+in the code just above this comment. You only need to add a function to the 
+petstore that will perform this logic
+
+#	
+#	def getPet( self, petType, name ):
+#		# do the logic above
+#
+
+Test by calling your new function on the petstore, 
+e.g. 
+myDog = ps.getPet('dog','Patty')
+print(myDog)
+
