@@ -10,7 +10,7 @@ class Pet:
 
 
 class PetStore:
-	pets = {"cats":list(),"dogs":list(),"birds":list()}
+	pets = {"cats":list(),"dogs":list(),"birds":list(),"fishs":list()}
 
 	def getPets( self, t ):
 		k = "{}s".format(t)
