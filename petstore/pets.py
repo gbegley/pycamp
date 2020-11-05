@@ -1,22 +1,42 @@
 from petstore import PetStore, Pet
 
+
+def showPets( Type, petList ):
+	print( Type,':')
+	for i, d in enumerate(petList):
+		print("{:>4}: {:>10} - ${:3.2f}".format(i,d.name,d.cost))
+	
+ 
+
 # Create a new PetStore
 ps = PetStore()
 
 # Create some pets 
 patty = Pet('dog','Dalmation','Patty',20)
 cole = Pet('dog','Pug','Cole',14)
+rufus = Pet('dog','Rottwieler','Rufus',16)
 jaws = Pet('fish','Great White', "Jabber Jaw",40)
 
 # add the pets to the store
 ps.addPet( patty )
 ps.addPet( cole )
+ps.addPet( rufus )
+ps.addPet( jaws )
+
+# Show all of the dogs
+# dogs = ps.getPets('dog')
+#print('Dogs:')
+#for i, d in enumerate(dogs):
+#	print("{:>4}: {:>10} - ${:3.2f}".format(i,d.name,d.cost))
+
 
 # Show all of the dogs
 dogs = ps.getPets('dog')
-print('Dogs:')
-for i, d in enumerate(dogs):
-	print("{:>4}: {:>10} - ${:3.2f}".format(i,d.name,d.cost))
+fishes = ps.getPets('fish')
+showPets('Dog',dogs)
+showPets('Fish', fishes)
+
+
 
 
 # find a dog in the petstore named 'Patty'
