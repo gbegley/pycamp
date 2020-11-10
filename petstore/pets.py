@@ -1,21 +1,21 @@
 from petstore import PetStore, Pet
 
 
-def showPets( Type, petList ):
-	print( Type,':')
-	for i, d in enumerate(petList):
-		print("{:>4}: {:>10} - ${:3.2f}".format(i,d.name,d.cost))
-	
+# def showPets( Type, petList ):
+# 	print( Type,':')
+# 	for i, d in enumerate(petList):
+# 		print("{:>4}: {:>10} - ${:3.2f} - {}".format(i,d.name,d.cost,d.behaviour))
+# 	
  
 
 # Create a new PetStore
 ps = PetStore()
 
 # Create some pets 
-patty = Pet('dog','Dalmation','Patty',20)
+patty = Pet('dog','Dalmation','Patty',20,'Pretty')
 cole = Pet('dog','Pug','Cole',14)
-rufus = Pet('dog','Rottwieler','Rufus',16)
-jaws = Pet('fish','Great White', "Jabber Jaw",40)
+rufus = Pet('dog','Rottwieler','Rufus',16,'Drooly')
+jaws = Pet('fish','Great White', "Jabber Jaw",40, 'bitey')
 
 # add the pets to the store
 ps.addPet( patty )
@@ -31,10 +31,10 @@ ps.addPet( jaws )
 
 
 # Show all of the dogs
-dogs = ps.getPets('dog')
-fishes = ps.getPets('fish')
-showPets('Dog',dogs)
-showPets('Fish', fishes)
+# dogs = ps.getPets('dog')
+# fishes = ps.getPets('fish')
+ps.showPets('dog')
+ps.showPets('fish')
 
 
 
@@ -55,5 +55,6 @@ print(myPet)
 #
 # Test by calling your new function on the petstore, 
 # e.g. 
-# myDog = ps.getPet('dog','Patty')
-# print(myDog)
+myDog = ps.getPet('dog','Patty')
+print('My Dog')
+print(myDog)
